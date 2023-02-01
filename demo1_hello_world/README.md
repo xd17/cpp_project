@@ -1,11 +1,11 @@
 ### 1. SOCKET API
-Client: Socket -> connect -> send -> recv -> closesocket
+Client: Socket -> connect -> send -> recv -> closesocket <br>
 Server: Socket -> bind -> listen -> accept -> recv -> send -> closesocket
 
 
 ### 2. USAGE
 ##### 2.1 start server
-`g++ tcp_server.cpp -o tcp_server.o -lwsock32`
+`g++ tcp_server.cpp -o tcp_server.o -lwsock32` <br>
 `.\tcp_server.o`
 
 ##### 2.2 start_client
