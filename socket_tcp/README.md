@@ -22,3 +22,6 @@ Server: Socket -> bind -> listen -> accept -> recv -> send -> closesocket
 `tasklist | findstr tcp_server`
 ##### 4.2 kill by pid
 `taskkill /t /f /im $pid`
+
+### 5. Chinese Encoding
+use `-fexec-charset=GBK -finput-charset=UTF-8` when compile `.cpp` file
