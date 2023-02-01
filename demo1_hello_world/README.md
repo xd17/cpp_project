@@ -9,11 +9,11 @@ Server: Socket -> bind -> listen -> accept -> recv -> send -> closesocket
 `.\tcp_server.o`
 
 ##### 2.2 start_client
-`g++ tcp_client.cpp -o tcp_client.o -lwsock32`
+`g++ tcp_client.cpp -o tcp_client.o -lwsock32` <br>
 `.\tcp_client.o`
 
 ### 3. ERROR
-1. undefined reference to `__imp_WSAStartup`
+1. undefined reference to `__imp_WSAStartup` <br>
 **_solution_**:  add `-lwsock32`  to complie
 
 
