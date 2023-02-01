@@ -7,6 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-fexec-charset=GBK", // 处理mingw中文编码问题.令mingw按GBK编码生成exe文件
+                "-finput-charset=UTF-8", // 处理mingw中文编码问题，令mingw按UTF-8编码处理
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
